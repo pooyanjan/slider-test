@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: ordi;
+    src: url("../../fonts/ordi/ordi.TTF") format("truetype");
+}
+
+
+
+li{
+    @apply p-1 hover:bg-orange-400 hover:px-3 transition-all duration-300
+}
+
+
+ul{
+    @apply -left-full  fixed w-32 h-40   transition-all duration-500 z-20 bg-red-400
+}
+
+ul.active{
+    @apply left-0 transition-all duration-500
+}
+/*******************/
+
+
+.overlay{
+    @apply -z-10 opacity-0 top-0 fixed  w-screen h-screen bg-slate-500/90  transition-all duration-500
+}
+
+.overlay.active{
+    @apply z-10 opacity-100  transition-all duration-500
+}
+
+
+/****** go up button ******/
+#up{
+    @apply p-1 bg-blue-600 rounded-full fixed bottom-4 right-0 animate-[shakeY_infinite_linear_12s] 
+}
+html{
+    @apply scroll-smooth
+}
+
+
+/**** go to pic *****/
+#view{
+    @apply p-1 bg-red-500 rounded-full fixed bottom-0 left-0
+}
+
+/*SWIPER*/
+.swiper {
+    width: 1000px;
+    height: 500px;
+  }
+  .swiper2 {
+    width: 1200px;
+    height: 400px;
+  }
+  .swiper-pagination-bullet{
+    @apply bg-blue-400 p-[6px] m-auto
+  }
+  .swiper-pagination2-bullet{
+    @apply bg-purple-600 
+  }
+   
+  .swiper-button-prev{
+    @apply text-gray-400
+  }
+ .swiper-button-next{
+    @apply text-gray-400
+  }
+
+
+  #btn{
+    @apply opacity-100 scale-100   transition-all duration-300
+  }
+  #btn.active{
+    @apply opacity-0 scale-0       transition-all duration-300
+  }
+
+  #btn1{
+    @apply opacity-0 scale-0       transition-all duration-300
+  }
+  #btn1.active{
+    @apply opacity-100 scale-100   transition-all duration-300
+  }
+
+
+  .swiper-scrollbar{
+    @apply bg-green-400
+  }
+
+  .swiper-scrollbar2{
+    @apply bg-red-700 mt-[-100px] h-1
+  }
+
+
+  
+
+  
+
+  
